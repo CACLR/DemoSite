@@ -26,8 +26,8 @@ body, html {
 
 #visit-link {
     position: absolute; /* Positioned absolutely within its positioned ancestor */
-    top: 10%; /* Example: 10% from the top of the #website-snapshot */
-    left: 10%; /* Example: 10% from the left of the #website-snapshot */
+    top: 50%; /* Example: 10% from the top of the #website-snapshot */
+    left: 50%; /* Example: 10% from the left of the #website-snapshot */
     transform: translate(-50%, -50%); /* Centers the button based on its own size */
     width: 200px; /* Fixed width */
     padding: 10px; /* Padding for aesthetics */
