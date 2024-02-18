@@ -1,0 +1,21 @@
+#website-snapshot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#website-snapshot img {
+    max-width: 100%;
+    height: auto;
+}
+
+#visit-link {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
