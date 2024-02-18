@@ -1,21 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #website-snapshot {
-    text-align: center;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #website-snapshot img {
-    max-width: 60%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
 }
 
 #visit-link {
+    position: fixed; /* Makes the button fixed at a position */
+    bottom: 20px; /* Distance from bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
     display: block;
     width: 200px;
-    margin: 0 auto;
     padding: 10px;
     background-color: #007bff;
     color: white;
     text-align: center;
     border: none;
     cursor: pointer;
+    z-index: 1000; /* Ensures the button is above other elements */
 }
