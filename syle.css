@@ -6,13 +6,9 @@ body, html {
 }
 
 #website-snapshot {
-    position: relative; /* Establishes a positioning context */
-    display: flex;
-    justify-content: center; /* Centers children horizontally */
-    align-items: center; /* Centers children vertically */
-    width: 100%; /* Full width of the container */
-    height: auto; /* Height adjusted to maintain aspect ratio of content */
+    position: relative; /* Establishes as a positioning context */
     overflow: hidden; /* Ensures no overflow of content */
+    /* If you need the container to exactly fit the image size, consider controlling image size or container size explicitly */
 }
 
 #website-snapshot img {
@@ -33,15 +29,8 @@ body, html {
     padding: 10px; /* Define padding */
     background-color: #007bff; /* Background color */
     color: white; /* Text color */
-    text-align: center; /* Center the text inside the button */
+    text-align: center; /* Center the text inside */
     border: none; /* No border */
     cursor: pointer; /* Pointer cursor on hover */
     z-index: 2; /* Ensure it appears above the image */
-}
-
-#website-snapshot {
-    position: relative; /* This makes it a reference container for absolutely positioned elements inside it */
-    /* Other styles to ensure the image and container work well together */
-}
-
 }
