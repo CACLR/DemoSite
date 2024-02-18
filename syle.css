@@ -6,33 +6,35 @@ body, html {
 }
 
 #website-snapshot {
-    width: 100%;
-    height: 100%;
+    position: relative; /* Establishes a positioning context */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Height adjusted to maintain aspect ratio of content */
+    overflow: hidden; /* Ensures no overflow of content */
 }
 
 #website-snapshot img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    max-width: 100%; /* Maximum width is 100% of its parent */
+    max-height: 100vh; /* Maximum height is 100% of the viewport height */
+    width: auto; /* Width is auto to maintain aspect ratio */
+    height: auto; /* Height is auto to maintain aspect ratio */
+    position: relative; /* Positioned relative to its normal position */
+    z-index: 1; /* Ensures image is below the button */
 }
 
 #visit-link {
-    position: fixed; /* Makes the button fixed at a position */
-    bottom: 20px; /* Distance from bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    display: block;
-    width: 200px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    z-index: 1000; /* Ensures the button is above other elements */
+    position: absolute; /* Positioned absolutely within its positioned ancestor */
+    top: 10%; /* Example: 10% from the top of the #website-snapshot */
+    left: 10%; /* Example: 10% from the left of the #website-snapshot */
+    transform: translate(-50%, -50%); /* Centers the button based on its own size */
+    width: 200px; /* Fixed width */
+    padding: 10px; /* Padding for aesthetics */
+    background-color: #007bff; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Centers text within the button */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    z-index: 2; /* Ensures button is above the image */
 }
