@@ -25,16 +25,16 @@ body, html {
 }
 
 #visit-link {
-    position: absolute; /* Positioned absolutely within its positioned ancestor */
-    top: 50%; /* Example: 10% from the top of the #website-snapshot */
-    left: 50%; /* Example: 10% from the left of the #website-snapshot */
-    transform: translate(-50%, -50%); /* Centers the button based on its own size */
-    width: 200px; /* Fixed width */
-    padding: 10px; /* Padding for aesthetics */
-    background-color: #007bff; /* Background color */
-    color: white; /* Text color */
-    text-align: center; /* Centers text within the button */
-    border: none; /* Removes border */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    z-index: 2; /* Ensures button is above the image */
+    position: absolute;
+    top: 50%; /* Adjust percentage for desired positioning */
+    left: 50%; /* Adjust percentage for desired positioning */
+    transform: translate(-50%, -50%); /* Center the button relative to its own size */
+    width: 200px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
 }
