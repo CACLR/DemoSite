@@ -39,4 +39,9 @@ body, html {
     z-index: 2; /* Ensure it appears above the image */
 }
 
+#website-snapshot {
+    position: relative; /* This makes it a reference container for absolutely positioned elements inside it */
+    /* Other styles to ensure the image and container work well together */
+}
+
 }
