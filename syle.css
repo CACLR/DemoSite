@@ -1,19 +1,25 @@
-#website-snapshot {
-    position: relative; /* Establishes as a positioning context */
-    overflow: hidden; /* Ensures no overflow of content */
-}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 3000px;
+    }
 
-#visit-link {
+.container img{
+    width: 600px;
+    height: 400px;
+ }
+
+ .container .btn{
     position: absolute;
-    top: 50%; /* Center vertically in the container */
-    left: 50%; /* Center horizontally in the container */
-    transform: translate(-50%, -50%); /* Adjust the button to center it based on its own size */
-    width: 200px; /* Define width */
-    padding: 10px; /* Define padding */
-    background-color: #007bff; /* Background color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text inside */
-    border: none; /* No border */
-    cursor: pointer; /* Pointer cursor on hover */
-    z-index: 2; /* Ensure it appears above the image */
-}
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16x 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+ }
